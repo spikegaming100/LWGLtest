@@ -1,0 +1,116 @@
+import org.gradle.internal.os.OperatingSystem
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.guardsquare:proguard-gradle:7.3.0'
+    }
+}
+
+plugins {
+    id("java")
+    id("application")
+    id 'edu.sc.seis.launch4j' version '3.0.4'
+}
+
+application {
+    mainClassName = 'ru.spike.util.Launcher'
+}
+project.ext.lwjglVersion = "3.3.2"
+
+version = "1.0" //Product version
+
+
+switch (OperatingSystem.current()) {
+    case OperatingSystem.LINUX:
+        def osArch = System.getProperty("os.arch")
+        project.ext.lwjglNatives = osArch.startsWith("arm") || osArch.startsWith("aarch64")
+                ? "natives-linux-${osArch.contains("64") || osArch.startsWith("armv8") ? "arm64" : "arm32"}"
+                : "natives-linux"
+        break
+    case OperatingSystem.MAC_OS:
+        project.ext.lwjglNatives = System.getProperty("os.arch").startsWith("aarch64") ? "natives-macos-arm64" : "natives-macos"
+        break
+    case OperatingSystem.WINDOWS:
+        def osArch = System.getProperty("os.arch")
+        project.ext.lwjglNatives = osArch.contains("64")
+                ? "natives-windows${osArch.startsWith("aarch64") ? "-arm64" : ""}"
+                : "natives-windows-x86"
+        break
+}
+
+dependencies {
+    implementation platform("org.lwjgl:lwjgl-bom:$lwjglVersion")
+
+    implementation "org.lwjgl:lwjgl"
+    implementation "org.lwjgl:lwjgl-assimp"
+    implementation "org.lwjgl:lwjgl-bgfx"
+    implementation "org.lwjgl:lwjgl-glfw"
+    implementation "org.lwjgl:lwjgl-openal"
+    implementation "org.lwjgl:lwjgl-opengl"
+    implementation "org.lwjgl:lwjgl-stb"
+    implementation "org.lwjgl:lwjgl-vulkan"
+    runtimeOnly "org.lwjgl:lwjgl::$lwjglNatives"
+    runtimeOnly "org.lwjgl:lwjgl-assimp::$lwjglNatives"
+    runtimeOnly "org.lwjgl:lwjgl-bgfx::$lwjglNatives"
+    runtimeOnly "org.lwjgl:lwjgl-glfw::$lwjglNatives"
+    runtimeOnly "org.lwjgl:lwjgl-openal::$lwjglNatives"
+    runtimeOnly "org.lwjgl:lwjgl-opengl::$lwjglNatives"
+    runtimeOnly "org.lwjgl:lwjgl-stb::$lwjglNatives"
+    if (lwjglNatives == "natives-macos" || lwjglNatives == "natives-macos-arm64") runtimeOnly "org.lwjgl:lwjgl-vulkan::$lwjglNatives"
+}
+
+jar {
+    archiveFileName = project.name + "-" + project.version + "_extLib.jar"
+    manifest {
+        attributes(
+                'Main-Class': project.mainClassName,
+                'Class-Path': configurations.runtimeClasspath.collect { 'lib/' + it.getName() }.join(' ')
+        )
+    }
+}
+
+tasks.register('fatjar', Jar) {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    archiveFileName = project.name + "-" + project.version + ".jar"
+    manifest {
+        attributes 'Main-Class': project.mainClassName
+    }
+    archiveClassifier = "all"
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    with jar
+
+}
+
+launch4j {
+    outfile = project.name + "-" + project.version + ".exe"
+    mainClassName = project.mainClassName
+    copyConfigurable = []
+    icon = "${projectDir}/src/main/java/res/app.ico"
+    version = project.version
+    textVersion = project.version
+    copyright = "© SpikeDevelopment"
+    jreMinVersion = "8"
+    jarTask = project.tasks.fatjar
+}
+
+tasks.register('buildExtLib', Copy) {
+    dependsOn jar
+    from configurations.runtimeClasspath
+    into "${buildDir}/libs/lib/"
+}
+
+task buildObf(type: proguard.gradle.ProGuardTask) {
+    configuration file('proguard.pro')
+    dependsOn buildExtLib
+    injars(tasks.named('fatjar', Jar))
+    libraryjars "${System.getProperty('java.home')}/lib/rt.jar"
+    configurations.runtimeClasspath.files.each {
+        libraryjars it}
+    verbose
+    outjars(layout.buildDirectory.file("${buildDir}/libs/" + project.name + "-" + project.version + "-" + "obf.jar"))
+}

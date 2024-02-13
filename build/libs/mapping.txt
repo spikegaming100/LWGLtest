@@ -1,0 +1,1485 @@
+org.lwjgl.BufferUtils -> a.a.a:
+    java.nio.ByteBuffer createByteBuffer(int) -> a
+    org.lwjgl.PointerBuffer createPointerBuffer(int) -> b
+org.lwjgl.PointerBuffer -> a.a.b:
+    org.lwjgl.PointerBuffer allocateDirect(int) -> a
+    org.lwjgl.PointerBuffer create(long,int) -> a
+    int sizeof() -> a
+    long get(int) -> b
+    org.lwjgl.PointerBuffer put(int,long) -> a
+    org.lwjgl.PointerBuffer put(int,org.lwjgl.system.Pointer) -> a
+    int hashCode() -> hashCode
+    boolean equals(java.lang.Object) -> equals
+    int compareTo(java.lang.Object) -> compareTo
+org.lwjgl.Version -> a.a.c:
+    org.lwjgl.Version$BuildType BUILD_TYPE -> a
+    java.lang.String versionPlain -> b
+    java.lang.String version -> c
+    void <init>() -> <init>
+    java.lang.String getVersion() -> a
+    java.lang.String createImplementation(java.lang.String,java.lang.String) -> a
+    java.lang.String findImplementationFromManifest() -> b
+    java.lang.String readImplementationFromManifest(java.net.URL) -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.Version$BuildType -> a.a.d:
+    org.lwjgl.Version$BuildType ALPHA -> c
+    org.lwjgl.Version$BuildType BETA -> d
+    org.lwjgl.Version$BuildType STABLE -> a
+    java.lang.String postfix -> b
+    void <init>(java.lang.String,int,java.lang.String) -> <init>
+    void <clinit>() -> <clinit>
+org.lwjgl.assimp.AIFileCloseProcI -> a.a.a.a:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.assimp.AIFileFlushProcI -> a.a.a.b:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.assimp.AIFileOpenProcI -> a.a.a.c:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    long invoke$487762a3() -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.assimp.AIFileReadProcI -> a.a.a.d:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    long invoke$398a9617() -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.assimp.AIFileSeekI -> a.a.a.e:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    int invoke$48775ee1() -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.assimp.AIFileTellProcI -> a.a.a.f:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    long invoke$1349e3() -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.assimp.AIFileWriteProcI -> a.a.a.g:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    long invoke$398a9617() -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.assimp.AILogStreamCallbackI -> a.a.a.h:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.bgfx.BGFXCacheReadCallbackI -> a.a.b.a:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    boolean invoke$398a99c8() -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.bgfx.BGFXCacheReadSizeCallbackI -> a.a.b.b:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    int invoke$2566aa8() -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.bgfx.BGFXCacheWriteCallbackI -> a.a.b.c:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.bgfx.BGFXCaptureBeginCallbackI -> a.a.b.d:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.bgfx.BGFXCaptureEndCallbackI -> a.a.b.e:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.bgfx.BGFXCaptureFrameCallbackI -> a.a.b.f:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.bgfx.BGFXFatalCallbackI -> a.a.b.g:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.bgfx.BGFXProfilerBeginI -> a.a.b.h:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.bgfx.BGFXProfilerBeginLiteralI -> a.a.b.i:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.bgfx.BGFXProfilerEndI -> a.a.b.j:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.bgfx.BGFXReallocCallbackI -> a.a.b.k:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    long invoke$12e6a98() -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.bgfx.BGFXReleaseFunctionCallbackI -> a.a.b.l:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.bgfx.BGFXScreenShotCallbackI -> a.a.b.m:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.bgfx.BGFXTraceVarArgsCallbackI -> a.a.b.n:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.glfw.EventLoop -> a.a.c.a:
+    void check() -> a
+org.lwjgl.glfw.GLFW -> a.a.c.b:
+    org.lwjgl.system.SharedLibrary GLFW -> a
+    void <init>() -> <init>
+    boolean glfwInit() -> a
+    org.lwjgl.glfw.GLFWErrorCallback glfwSetErrorCallback(org.lwjgl.glfw.GLFWErrorCallbackI) -> a
+    long glfwGetPrimaryMonitor() -> b
+    org.lwjgl.glfw.GLFWVidMode glfwGetVideoMode(long) -> a
+    void glfwDefaultWindowHints() -> c
+    void glfwWindowHint(int,int) -> a
+    long glfwCreateWindow(int,int,java.lang.CharSequence,long,long) -> a
+    void glfwDestroyWindow(long) -> b
+    boolean glfwWindowShouldClose(long) -> c
+    void glfwSetWindowShouldClose(long,boolean) -> a
+    void glfwSetWindowPos(long,int,int) -> a
+    void glfwMaximizeWindow(long) -> d
+    void glfwShowWindow(long) -> e
+    org.lwjgl.glfw.GLFWFramebufferSizeCallback glfwSetFramebufferSizeCallback(long,org.lwjgl.glfw.GLFWFramebufferSizeCallbackI) -> a
+    void glfwPollEvents() -> d
+    org.lwjgl.glfw.GLFWKeyCallback glfwSetKeyCallback(long,org.lwjgl.glfw.GLFWKeyCallbackI) -> a
+    void glfwMakeContextCurrent(long) -> f
+    void glfwSwapBuffers(long) -> g
+    void glfwSwapInterval(int) -> a
+    org.lwjgl.system.SharedLibrary access$000() -> e
+    void <clinit>() -> <clinit>
+org.lwjgl.glfw.GLFW$Functions -> a.a.c.c:
+    long Init -> a
+    long SetErrorCallback -> b
+    long GetPrimaryMonitor -> c
+    long GetVideoMode -> d
+    long DefaultWindowHints -> e
+    long WindowHint -> f
+    long CreateWindow -> g
+    long DestroyWindow -> h
+    long WindowShouldClose -> i
+    long SetWindowShouldClose -> j
+    long SetWindowPos -> k
+    long MaximizeWindow -> l
+    long ShowWindow -> m
+    long SetFramebufferSizeCallback -> n
+    long PollEvents -> o
+    long SetKeyCallback -> p
+    long MakeContextCurrent -> q
+    long SwapBuffers -> r
+    long SwapInterval -> s
+    void <clinit>() -> <clinit>
+org.lwjgl.glfw.GLFWAllocateCallbackI -> a.a.c.d:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    long invoke$2566aa9() -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.glfw.GLFWCharCallbackI -> a.a.c.e:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.glfw.GLFWCharModsCallbackI -> a.a.c.f:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.glfw.GLFWCursorEnterCallbackI -> a.a.c.g:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.glfw.GLFWCursorPosCallbackI -> a.a.c.h:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.glfw.GLFWDeallocateCallbackI -> a.a.c.i:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.glfw.GLFWDropCallbackI -> a.a.c.j:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.glfw.GLFWErrorCallback -> a.a.c.k:
+    org.lwjgl.glfw.GLFWErrorCallback createSafe(long) -> a
+    void <init>() -> <init>
+    void <init>(long) -> <init>
+    org.lwjgl.glfw.GLFWErrorCallback createPrint(java.io.PrintStream) -> a
+org.lwjgl.glfw.GLFWErrorCallback$1 -> a.a.c.l:
+    java.util.Map ERROR_CODES -> b
+    java.io.PrintStream val$stream -> c
+    void <init>(java.io.PrintStream) -> <init>
+    void invoke(int,long) -> a
+    boolean lambda$$0(java.lang.reflect.Field,java.lang.Integer) -> a
+org.lwjgl.glfw.GLFWErrorCallback$Container -> a.a.c.m:
+    org.lwjgl.glfw.GLFWErrorCallbackI delegate -> b
+    void <init>(long,org.lwjgl.glfw.GLFWErrorCallbackI) -> <init>
+    void invoke(int,long) -> a
+org.lwjgl.glfw.GLFWErrorCallbackI -> a.a.c.n:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void invoke(int,long) -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.glfw.GLFWFramebufferSizeCallback -> a.a.c.o:
+    org.lwjgl.glfw.GLFWFramebufferSizeCallback createSafe(long) -> a
+    void <init>() -> <init>
+    void <init>(long) -> <init>
+org.lwjgl.glfw.GLFWFramebufferSizeCallback$Container -> a.a.c.p:
+    org.lwjgl.glfw.GLFWFramebufferSizeCallbackI delegate -> b
+    void <init>(long,org.lwjgl.glfw.GLFWFramebufferSizeCallbackI) -> <init>
+    void invoke(long,int,int) -> invoke
+org.lwjgl.glfw.GLFWFramebufferSizeCallbackI -> a.a.c.q:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void invoke(long,int,int) -> invoke
+    void <clinit>() -> <clinit>
+org.lwjgl.glfw.GLFWJoystickCallbackI -> a.a.c.r:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.glfw.GLFWKeyCallback -> a.a.c.s:
+    org.lwjgl.glfw.GLFWKeyCallback createSafe(long) -> a
+    void <init>() -> <init>
+    void <init>(long) -> <init>
+org.lwjgl.glfw.GLFWKeyCallback$Container -> a.a.c.t:
+    org.lwjgl.glfw.GLFWKeyCallbackI delegate -> b
+    void <init>(long,org.lwjgl.glfw.GLFWKeyCallbackI) -> <init>
+    void invoke(long,int,int,int,int) -> invoke
+org.lwjgl.glfw.GLFWKeyCallbackI -> a.a.c.u:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void invoke(long,int,int,int,int) -> invoke
+    void <clinit>() -> <clinit>
+org.lwjgl.glfw.GLFWMonitorCallbackI -> a.a.c.v:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.glfw.GLFWMouseButtonCallbackI -> a.a.c.w:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.glfw.GLFWReallocateCallbackI -> a.a.c.x:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    long invoke$487762a3() -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.glfw.GLFWScrollCallbackI -> a.a.c.y:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.glfw.GLFWVidMode -> a.a.c.z:
+    int WIDTH -> b
+    int HEIGHT -> c
+    int width() -> a
+    int height() -> b
+    org.lwjgl.glfw.GLFWVidMode createSafe(long) -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.glfw.GLFWWindowCloseCallbackI -> a.a.c.A:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.glfw.GLFWWindowContentScaleCallbackI -> a.a.c.B:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.glfw.GLFWWindowFocusCallbackI -> a.a.c.C:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.glfw.GLFWWindowIconifyCallbackI -> a.a.c.D:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.glfw.GLFWWindowMaximizeCallbackI -> a.a.c.E:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.glfw.GLFWWindowPosCallbackI -> a.a.c.F:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.glfw.GLFWWindowRefreshCallbackI -> a.a.c.G:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.glfw.GLFWWindowSizeCallbackI -> a.a.c.H:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.openal.SOFTCallbackBufferTypeI -> a.a.d.a:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    long invoke$48775ee2() -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.openal.SOFTEventProcI -> a.a.d.b:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.opengl.GL -> a.a.e.a:
+    org.lwjgl.system.APIUtil$APIVersion MAX_VERSION -> a
+    org.lwjgl.system.FunctionProvider functionProvider -> b
+    java.lang.ThreadLocal capabilitiesTLS -> c
+    org.lwjgl.opengl.GL$ICD icd -> d
+    void <init>() -> <init>
+    void initialize() -> a
+    org.lwjgl.opengl.GLCapabilities getCapabilities() -> b
+    org.lwjgl.opengl.GLCapabilities createCapabilities() -> c
+    org.lwjgl.opengl.GLCapabilities createCapabilities(boolean,java.util.function.IntFunction) -> a
+    org.lwjgl.opengl.GL$ICD access$102(org.lwjgl.opengl.GL$ICD) -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.opengl.GL$1 -> a.a.e.b:
+    long GetProcAddress -> b
+    void <init>(org.lwjgl.system.SharedLibrary) -> <init>
+    long getFunctionAddress(java.nio.ByteBuffer) -> a
+org.lwjgl.opengl.GL$2 -> a.a.e.c:
+    int[] $SwitchMap$org$lwjgl$system$Platform -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.opengl.GL$ICD -> a.a.e.d:
+    void set(org.lwjgl.opengl.GLCapabilities) -> a
+org.lwjgl.opengl.GL$ICDStatic -> a.a.e.e:
+    org.lwjgl.opengl.GLCapabilities tempCaps -> a
+    void <init>() -> <init>
+    void set(org.lwjgl.opengl.GLCapabilities) -> a
+    void <init>(byte) -> <init>
+org.lwjgl.opengl.GL11 -> a.a.e.f:
+    void glEnable(int) -> a
+    void glClearColor(float,float,float,float) -> a
+    void glCullFace(int) -> b
+    void <clinit>() -> <clinit>
+org.lwjgl.opengl.GL11C -> a.a.e.g:
+    void glEnable(int) -> a
+    void glClearColor(float,float,float,float) -> a
+    void glCullFace(int) -> b
+    void <clinit>() -> <clinit>
+org.lwjgl.opengl.GLCapabilities -> a.a.e.h:
+    org.lwjgl.PointerBuffer addresses -> a
+    void <init>(org.lwjgl.system.FunctionProvider,java.util.Set,boolean,java.util.function.IntFunction) -> <init>
+    boolean check_GL11(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set,boolean) -> a
+    boolean check_GL12(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> a
+    boolean check_GL13(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set,boolean) -> b
+    boolean check_GL14(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set,boolean) -> c
+    boolean check_GL15(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> b
+    boolean check_GL20(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> c
+    boolean check_GL21(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> d
+    boolean check_GL30(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> e
+    boolean check_GL31(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> f
+    boolean check_GL32(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> g
+    boolean check_GL33(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set,boolean) -> d
+    boolean check_GL40(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> h
+    boolean check_GL41(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> i
+    boolean check_GL42(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> j
+    boolean check_GL43(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> k
+    boolean check_GL44(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> l
+    boolean check_GL45(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> m
+    boolean check_GL46(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> n
+    boolean check_AMD_debug_output(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> o
+    boolean check_AMD_draw_buffers_blend(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> p
+    boolean check_AMD_framebuffer_multisample_advanced(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> q
+    boolean check_AMD_gpu_shader_int64(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> r
+    boolean check_AMD_interleaved_elements(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> s
+    boolean check_AMD_occlusion_query_event(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> t
+    boolean check_AMD_performance_monitor(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> u
+    boolean check_AMD_sample_positions(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> v
+    boolean check_AMD_sparse_texture(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> w
+    boolean check_AMD_stencil_operation_extended(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> x
+    boolean check_AMD_vertex_shader_tessellator(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> y
+    boolean check_ARB_base_instance(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> z
+    boolean check_ARB_bindless_texture(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> A
+    boolean check_ARB_blend_func_extended(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> B
+    boolean check_ARB_buffer_storage(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> C
+    boolean check_ARB_cl_event(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> D
+    boolean check_ARB_clear_buffer_object(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> E
+    boolean check_ARB_clear_texture(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> F
+    boolean check_ARB_clip_control(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> G
+    boolean check_ARB_color_buffer_float(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> H
+    boolean check_ARB_compute_shader(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> I
+    boolean check_ARB_compute_variable_group_size(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> J
+    boolean check_ARB_copy_buffer(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> K
+    boolean check_ARB_copy_image(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> L
+    boolean check_ARB_debug_output(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> M
+    boolean check_ARB_direct_state_access(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> N
+    boolean check_ARB_draw_buffers(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> O
+    boolean check_ARB_draw_buffers_blend(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> P
+    boolean check_ARB_draw_elements_base_vertex(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> Q
+    boolean check_ARB_draw_indirect(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> R
+    boolean check_ARB_draw_instanced(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> S
+    boolean check_ARB_ES2_compatibility(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> T
+    boolean check_ARB_ES3_1_compatibility(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> U
+    boolean check_ARB_ES3_2_compatibility(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> V
+    boolean check_ARB_framebuffer_no_attachments(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> W
+    boolean check_ARB_framebuffer_object(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> X
+    boolean check_ARB_geometry_shader4(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> Y
+    boolean check_ARB_get_program_binary(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> Z
+    boolean check_ARB_get_texture_sub_image(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aa
+    boolean check_ARB_gl_spirv(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> ab
+    boolean check_ARB_gpu_shader_fp64(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> ac
+    boolean check_ARB_gpu_shader_int64(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> ad
+    boolean check_ARB_imaging(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set,boolean) -> e
+    boolean check_ARB_indirect_parameters(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> ae
+    boolean check_ARB_instanced_arrays(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> af
+    boolean check_ARB_internalformat_query(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> ag
+    boolean check_ARB_internalformat_query2(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> ah
+    boolean check_ARB_invalidate_subdata(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> ai
+    boolean check_ARB_map_buffer_range(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aj
+    boolean check_ARB_matrix_palette(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> ak
+    boolean check_ARB_multi_bind(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> al
+    boolean check_ARB_multi_draw_indirect(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> am
+    boolean check_ARB_multisample(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> an
+    boolean check_ARB_multitexture(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> ao
+    boolean check_ARB_occlusion_query(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> ap
+    boolean check_ARB_parallel_shader_compile(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aq
+    boolean check_ARB_point_parameters(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> ar
+    boolean check_ARB_polygon_offset_clamp(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> as
+    boolean check_ARB_program_interface_query(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> at
+    boolean check_ARB_provoking_vertex(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> au
+    boolean check_ARB_robustness(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> av
+    boolean check_ARB_sample_locations(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aw
+    boolean check_ARB_sample_shading(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> ax
+    boolean check_ARB_sampler_objects(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> ay
+    boolean check_ARB_separate_shader_objects(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> az
+    boolean check_ARB_shader_atomic_counters(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aA
+    boolean check_ARB_shader_image_load_store(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aB
+    boolean check_ARB_shader_objects(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aC
+    boolean check_ARB_shader_storage_buffer_object(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aD
+    boolean check_ARB_shader_subroutine(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aE
+    boolean check_ARB_shading_language_include(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aF
+    boolean check_ARB_sparse_buffer(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aG
+    boolean check_ARB_sparse_texture(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aH
+    boolean check_ARB_sync(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aI
+    boolean check_ARB_tessellation_shader(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aJ
+    boolean check_ARB_texture_barrier(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aK
+    boolean check_ARB_texture_buffer_object(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aL
+    boolean check_ARB_texture_buffer_range(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aM
+    boolean check_ARB_texture_compression(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aN
+    boolean check_ARB_texture_multisample(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aO
+    boolean check_ARB_texture_storage(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aP
+    boolean check_ARB_texture_storage_multisample(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aQ
+    boolean check_ARB_texture_view(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aR
+    boolean check_ARB_timer_query(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aS
+    boolean check_ARB_transform_feedback2(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aT
+    boolean check_ARB_transform_feedback3(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aU
+    boolean check_ARB_transform_feedback_instanced(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aV
+    boolean check_ARB_transpose_matrix(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aW
+    boolean check_ARB_uniform_buffer_object(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aX
+    boolean check_ARB_vertex_array_object(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aY
+    boolean check_ARB_vertex_attrib_64bit(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> aZ
+    boolean check_ARB_vertex_attrib_binding(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> ba
+    boolean check_ARB_vertex_blend(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bb
+    boolean check_ARB_vertex_buffer_object(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bc
+    boolean check_ARB_vertex_program(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bd
+    boolean check_ARB_vertex_shader(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> be
+    boolean check_ARB_vertex_type_2_10_10_10_rev(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set,boolean) -> f
+    boolean check_ARB_viewport_array(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bf
+    boolean check_ARB_window_pos(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bg
+    boolean check_EXT_bindable_uniform(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bh
+    boolean check_EXT_blend_color(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bi
+    boolean check_EXT_blend_equation_separate(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bj
+    boolean check_EXT_blend_func_separate(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bk
+    boolean check_EXT_blend_minmax(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bl
+    boolean check_EXT_compiled_vertex_array(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bm
+    boolean check_EXT_debug_label(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bn
+    boolean check_EXT_debug_marker(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bo
+    boolean check_EXT_depth_bounds_test(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bp
+    boolean check_EXT_direct_state_access(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bq
+    boolean check_EXT_draw_buffers2(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> br
+    boolean check_EXT_draw_instanced(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bs
+    boolean check_EXT_EGL_image_storage(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bt
+    boolean check_EXT_external_buffer(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bu
+    boolean check_EXT_framebuffer_blit(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bv
+    boolean check_EXT_framebuffer_blit_layers(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bw
+    boolean check_EXT_framebuffer_multisample(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bx
+    boolean check_EXT_framebuffer_object(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> by
+    boolean check_EXT_geometry_shader4(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bz
+    boolean check_EXT_gpu_program_parameters(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bA
+    boolean check_EXT_gpu_shader4(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bB
+    boolean check_EXT_memory_object(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bC
+    boolean check_EXT_memory_object_fd(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bD
+    boolean check_EXT_memory_object_win32(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bE
+    boolean check_EXT_point_parameters(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bF
+    boolean check_EXT_polygon_offset_clamp(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bG
+    boolean check_EXT_provoking_vertex(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bH
+    boolean check_EXT_raster_multisample(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bI
+    boolean check_EXT_secondary_color(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bJ
+    boolean check_EXT_semaphore(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bK
+    boolean check_EXT_semaphore_fd(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bL
+    boolean check_EXT_semaphore_win32(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bM
+    boolean check_EXT_separate_shader_objects(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bN
+    boolean check_EXT_shader_framebuffer_fetch_non_coherent(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bO
+    boolean check_EXT_shader_image_load_store(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bP
+    boolean check_EXT_stencil_clear_tag(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bQ
+    boolean check_EXT_stencil_two_side(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bR
+    boolean check_EXT_texture_array(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bS
+    boolean check_EXT_texture_buffer_object(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bT
+    boolean check_EXT_texture_integer(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bU
+    boolean check_EXT_texture_storage(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bV
+    boolean check_EXT_timer_query(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bW
+    boolean check_EXT_transform_feedback(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bX
+    boolean check_EXT_vertex_attrib_64bit(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bY
+    boolean check_EXT_win32_keyed_mutex(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> bZ
+    boolean check_EXT_window_rectangles(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> ca
+    boolean check_EXT_x11_sync_object(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cb
+    boolean check_GREMEDY_frame_terminator(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cc
+    boolean check_GREMEDY_string_marker(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cd
+    boolean check_INTEL_framebuffer_CMAA(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> ce
+    boolean check_INTEL_map_texture(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cf
+    boolean check_INTEL_performance_query(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cg
+    boolean check_KHR_blend_equation_advanced(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> ch
+    boolean check_KHR_debug(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> ci
+    boolean check_KHR_parallel_shader_compile(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cj
+    boolean check_KHR_robustness(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> ck
+    boolean check_MESA_framebuffer_flip_y(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cl
+    boolean check_NV_alpha_to_coverage_dither_control(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cm
+    boolean check_NV_bindless_multi_draw_indirect(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cn
+    boolean check_NV_bindless_multi_draw_indirect_count(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> co
+    boolean check_NV_bindless_texture(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cp
+    boolean check_NV_blend_equation_advanced(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cq
+    boolean check_NV_clip_space_w_scaling(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cr
+    boolean check_NV_command_list(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cs
+    boolean check_NV_conditional_render(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> ct
+    boolean check_NV_conservative_raster(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cu
+    boolean check_NV_conservative_raster_dilate(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cv
+    boolean check_NV_conservative_raster_pre_snap_triangles(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cw
+    boolean check_NV_copy_image(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cx
+    boolean check_NV_depth_buffer_float(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cy
+    boolean check_NV_draw_texture(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cz
+    boolean check_NV_draw_vulkan_image(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cA
+    boolean check_NV_explicit_multisample(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cB
+    boolean check_NV_fence(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cC
+    boolean check_NV_fragment_coverage_to_color(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cD
+    boolean check_NV_framebuffer_mixed_samples(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cE
+    boolean check_NV_framebuffer_multisample_coverage(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cF
+    boolean check_NV_gpu_multicast(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cG
+    boolean check_NV_gpu_shader5(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cH
+    boolean check_NV_half_float(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cI
+    boolean check_NV_internalformat_sample_query(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cJ
+    boolean check_NV_memory_attachment(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cK
+    boolean check_NV_memory_object_sparse(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cL
+    boolean check_NV_mesh_shader(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cM
+    boolean check_NV_path_rendering(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cN
+    boolean check_NV_pixel_data_range(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cO
+    boolean check_NV_point_sprite(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cP
+    boolean check_NV_primitive_restart(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cQ
+    boolean check_NV_query_resource(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cR
+    boolean check_NV_query_resource_tag(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cS
+    boolean check_NV_sample_locations(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cT
+    boolean check_NV_scissor_exclusive(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cU
+    boolean check_NV_shader_buffer_load(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cV
+    boolean check_NV_shading_rate_image(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cW
+    boolean check_NV_texture_barrier(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cX
+    boolean check_NV_texture_multisample(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cY
+    boolean check_NV_timeline_semaphore(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> cZ
+    boolean check_NV_transform_feedback(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> da
+    boolean check_NV_transform_feedback2(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> db
+    boolean check_NV_vertex_array_range(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> dc
+    boolean check_NV_vertex_attrib_integer_64bit(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> dd
+    boolean check_NV_vertex_buffer_unified_memory(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> de
+    boolean check_NV_viewport_swizzle(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> df
+    boolean check_NVX_conditional_render(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> dg
+    boolean check_NVX_gpu_multicast2(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> dh
+    boolean check_NVX_progress_fence(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> di
+    boolean check_OVR_multiview(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,java.util.Set) -> dj
+    boolean hasDSA(java.util.Set) -> a
+    boolean ARB_framebuffer_object(java.util.Set) -> b
+    boolean ARB_map_buffer_range(java.util.Set) -> c
+    boolean ARB_vertex_array_object(java.util.Set) -> d
+    boolean ARB_copy_buffer(java.util.Set) -> e
+    boolean ARB_texture_buffer_object(java.util.Set) -> f
+    boolean ARB_uniform_buffer_object(java.util.Set) -> g
+    boolean ARB_sampler_objects(java.util.Set) -> h
+    boolean ARB_transform_feedback2(java.util.Set) -> i
+    boolean ARB_separate_shader_objects(java.util.Set) -> j
+    boolean ARB_texture_storage(java.util.Set) -> k
+    boolean ARB_texture_storage_multisample(java.util.Set) -> l
+    boolean ARB_vertex_attrib_binding(java.util.Set) -> m
+    boolean ARB_invalidate_subdata(java.util.Set) -> n
+    boolean ARB_texture_buffer_range(java.util.Set) -> o
+    boolean ARB_framebuffer_no_attachments(java.util.Set) -> p
+    boolean ARB_buffer_storage(java.util.Set) -> q
+    boolean ARB_clear_texture(java.util.Set) -> r
+    boolean ARB_multi_bind(java.util.Set) -> s
+    boolean ARB_query_buffer_object(java.util.Set) -> t
+org.lwjgl.opengl.GLDebugMessageAMDCallbackI -> a.a.e.i:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.opengl.GLDebugMessageARBCallbackI -> a.a.e.j:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.opengl.GLDebugMessageCallbackI -> a.a.e.k:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.opengl.WGL -> a.a.e.l:
+    long nwglGetProcAddress(long,long) -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.stb.STBIEOFCallbackI -> a.a.f.a:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    int invoke$1349e2() -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.stb.STBIReadCallbackI -> a.a.f.b:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    int invoke$48775ee1() -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.stb.STBISkipCallbackI -> a.a.f.c:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.stb.STBIWriteCallbackI -> a.a.f.d:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.stb.STBIZlibCompressI -> a.a.f.e:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    long invoke$3998b159() -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.system.APIUtil -> a.a.g.a:
+    java.io.PrintStream DEBUG_STREAM -> a
+    java.util.regex.Pattern API_VERSION_PATTERN -> b
+    java.io.PrintStream getDebugStream() -> b
+    void apiLog(java.lang.CharSequence) -> a
+    void apiLogMore(java.lang.CharSequence) -> b
+    void apiLogMissing(java.lang.String,java.nio.ByteBuffer) -> a
+    org.lwjgl.system.SharedLibrary apiCreateLibrary(java.lang.String) -> a
+    long apiGetFunctionAddress(org.lwjgl.system.FunctionProvider,java.lang.String) -> a
+    long apiGetBytes(int,int) -> a
+    long apiCheckAllocation(int,long,long) -> a
+    org.lwjgl.system.APIUtil$APIVersion apiParseVersion(org.lwjgl.system.Configuration) -> a
+    org.lwjgl.system.APIUtil$APIVersion apiParseVersion(java.lang.String) -> b
+    void apiFilterExtensions(java.util.Set,org.lwjgl.system.Configuration) -> a
+    java.util.Map apiClassTokens(java.util.function.BiPredicate,java.util.Map,java.lang.Class[]) -> a
+    org.lwjgl.system.libffi.FFICIF apiCreateCIF(int,org.lwjgl.system.libffi.FFIType,org.lwjgl.system.libffi.FFIType[]) -> a
+    int apiStdcall() -> a
+    void apiClosureRet(long,boolean) -> a
+    void apiClosureRet(long,int) -> a
+    void apiClosureRetP(long,long) -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.system.APIUtil$1 -> a.a.g.b:
+    int[] $SwitchMap$org$lwjgl$system$Platform -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.system.APIUtil$APIVersion -> a.a.g.c:
+    int major -> a
+    int minor -> b
+    java.lang.String revision -> c
+    java.lang.String implementation -> d
+    void <init>(int,int,java.lang.String,java.lang.String) -> <init>
+    java.lang.String toString() -> toString
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    int compareTo(java.lang.Object) -> compareTo
+org.lwjgl.system.Callback -> a.a.g.d:
+    boolean DEBUG_ALLOCATOR -> b
+    org.lwjgl.system.Callback$ClosureRegistry CLOSURE_REGISTRY -> c
+    long CALLBACK_HANDLER -> d
+    long address -> e
+    void <init>(org.lwjgl.system.libffi.FFICIF) -> <init>
+    void <init>(long) -> <init>
+    long address() -> address
+    void free() -> a_
+    long getCallbackHandler(java.lang.reflect.Method) -> a
+    long create(org.lwjgl.system.libffi.FFICIF,java.lang.Object) -> a
+    org.lwjgl.system.CallbackI get(long) -> b
+    void free(long) -> c
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+    void <clinit>() -> <clinit>
+org.lwjgl.system.Callback$1 -> a.a.g.e:
+    void <init>() -> <init>
+    void put(long,org.lwjgl.system.libffi.FFIClosure) -> a
+    org.lwjgl.system.libffi.FFIClosure get(long) -> a
+org.lwjgl.system.Callback$2 -> a.a.g.f:
+    java.util.concurrent.ConcurrentHashMap map -> a
+    void <init>() -> <init>
+    void put(long,org.lwjgl.system.libffi.FFIClosure) -> a
+    org.lwjgl.system.libffi.FFIClosure get(long) -> a
+org.lwjgl.system.Callback$ClosureRegistry -> a.a.g.g:
+    void put(long,org.lwjgl.system.libffi.FFIClosure) -> a
+    org.lwjgl.system.libffi.FFIClosure get(long) -> a
+org.lwjgl.system.CallbackI -> a.a.g.h:
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    long address() -> address
+    void callback(long,long) -> callback
+org.lwjgl.system.Checks -> a.a.g.i:
+    boolean CHECKS -> a
+    boolean DEBUG -> b
+    boolean DEBUG_FUNCTIONS -> c
+    int remainingSafe(org.lwjgl.system.CustomBuffer) -> a
+    boolean checkFunctions(org.lwjgl.system.FunctionProvider,org.lwjgl.PointerBuffer,int[],java.lang.String[]) -> a
+    boolean reportMissing(java.lang.String,java.lang.String) -> a
+    long check(long) -> a
+    void assertNT(boolean) -> a
+    void checkNT1(java.nio.ByteBuffer) -> a
+    void checkNT2(java.nio.ByteBuffer) -> b
+    void checkNT1Safe(java.nio.ByteBuffer) -> c
+    void checkNT2Safe(java.nio.ByteBuffer) -> d
+    void checkBuffer(int,int) -> b
+    void check(org.lwjgl.system.CustomBuffer,int) -> a
+    long check(int,int) -> a
+    void throwIAE(int,int) -> c
+    void <clinit>() -> <clinit>
+org.lwjgl.system.Configuration -> a.a.g.j:
+    org.lwjgl.system.Configuration LIBRARY_PATH -> a
+    org.lwjgl.system.Configuration BUNDLED_LIBRARY_NAME_MAPPER -> b
+    org.lwjgl.system.Configuration BUNDLED_LIBRARY_PATH_MAPPER -> c
+    org.lwjgl.system.Configuration SHARED_LIBRARY_EXTRACT_DIRECTORY -> d
+    org.lwjgl.system.Configuration SHARED_LIBRARY_EXTRACT_PATH -> e
+    org.lwjgl.system.Configuration SHARED_LIBRARY_EXTRACT_FORCE -> f
+    org.lwjgl.system.Configuration EMULATE_SYSTEM_LOADLIBRARY -> g
+    org.lwjgl.system.Configuration LIBRARY_NAME -> h
+    org.lwjgl.system.Configuration MEMORY_ALLOCATOR -> i
+    org.lwjgl.system.Configuration STACK_SIZE -> j
+    org.lwjgl.system.Configuration ARRAY_TLC_SIZE -> k
+    org.lwjgl.system.Configuration JNI_NATIVE_INTERFACE_FUNCTION_COUNT -> l
+    org.lwjgl.system.Configuration DISABLE_CHECKS -> m
+    org.lwjgl.system.Configuration DISABLE_FUNCTION_CHECKS -> n
+    org.lwjgl.system.Configuration DEBUG -> o
+    org.lwjgl.system.Configuration DEBUG_LOADER -> p
+    org.lwjgl.system.Configuration DEBUG_STREAM -> q
+    org.lwjgl.system.Configuration DEBUG_MEMORY_ALLOCATOR -> r
+    org.lwjgl.system.Configuration DEBUG_MEMORY_ALLOCATOR_FAST -> s
+    org.lwjgl.system.Configuration DEBUG_STACK -> t
+    org.lwjgl.system.Configuration DEBUG_FUNCTIONS -> u
+    org.lwjgl.system.Configuration GLFW_LIBRARY_NAME -> v
+    org.lwjgl.system.Configuration GLFW_CHECK_THREAD0 -> w
+    org.lwjgl.system.Configuration OPENGL_EXPLICIT_INIT -> x
+    org.lwjgl.system.Configuration OPENGL_LIBRARY_NAME -> y
+    org.lwjgl.system.Configuration OPENGL_MAXVERSION -> z
+    org.lwjgl.system.Configuration OPENGL_EXTENSION_FILTER -> A
+    java.lang.String property -> B
+    java.lang.Object state -> C
+    void <init>(java.lang.String,org.lwjgl.system.Configuration$StateInit) -> <init>
+    java.lang.String getProperty() -> a
+    void set(java.lang.Object) -> a
+    java.lang.Object get() -> b
+    java.lang.Object get(java.lang.Object) -> b
+    void <clinit>() -> <clinit>
+org.lwjgl.system.Configuration$StateInit -> a.a.g.k:
+    org.lwjgl.system.Configuration$StateInit BOOLEAN -> a
+    org.lwjgl.system.Configuration$StateInit INT -> b
+    org.lwjgl.system.Configuration$StateInit STRING -> c
+    java.lang.Boolean lambda$static$0(java.lang.String) -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.system.CustomBuffer -> a.a.g.l:
+    java.nio.ByteBuffer container -> a
+    int mark -> b
+    int position -> c
+    int limit -> d
+    int capacity -> e
+    int sizeof() -> a
+    long address() -> address
+    int position() -> b
+    int limit() -> c
+    int remaining() -> d
+    java.lang.String toString() -> toString
+org.lwjgl.system.FunctionProvider -> a.a.g.m:
+    long getFunctionAddress(java.lang.CharSequence) -> a
+    long getFunctionAddress(java.nio.ByteBuffer) -> a
+org.lwjgl.system.JNI -> a.a.g.n:
+    int invokeI(long) -> a
+    int invokePI(long,long) -> a
+    long invokeP(long) -> b
+    long invokePP(long,long) -> b
+    long invokePPP(long,long,long) -> a
+    long invokePPPP(int,int,long,long,long,long) -> a
+    void invokeV(long) -> c
+    void invokeV(int,long) -> a
+    void invokeV(int,int,long) -> a
+    void invokePV(long,long) -> c
+    void invokePV(long,int,long) -> a
+    void invokePV(long,int,int,long) -> a
+    boolean invokePPZ(long,long,long) -> b
+    int callI(long) -> d
+    long callP(int,long) -> b
+    long callP(int,int,long) -> b
+    long callPP(long,long) -> d
+    void callPV(int,long,long) -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.system.Library -> a.a.g.o:
+    java.lang.String JNI_LIBRARY_NAME -> a
+    java.util.regex.Pattern PATH_SEPARATOR -> b
+    java.util.regex.Pattern NATIVES_JAR -> c
+    void <init>() -> <init>
+    void initialize() -> a
+    void loadSystem(java.util.function.Consumer,java.util.function.Consumer,java.lang.Class,java.lang.String,java.lang.String) -> a
+    boolean loadSystemFromLibraryPath(java.util.function.Consumer,java.lang.Class,java.lang.String,java.lang.String,boolean) -> a
+    boolean loadSystem(java.util.function.Consumer,java.lang.Class,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String) -> a
+    org.lwjgl.system.SharedLibrary loadNative(java.lang.Class,java.lang.String,java.lang.String) -> a
+    org.lwjgl.system.SharedLibrary loadNative(java.lang.Class,java.lang.String,java.lang.String,boolean) -> a
+    org.lwjgl.system.SharedLibrary loadNative(java.lang.Class,java.lang.String,java.lang.String,boolean,boolean) -> a
+    org.lwjgl.system.SharedLibrary loadNativeFromSystem(java.lang.String) -> a
+    org.lwjgl.system.SharedLibrary loadNativeFromLibraryPath(java.lang.Class,java.lang.String,java.lang.String,boolean) -> b
+    org.lwjgl.system.SharedLibrary loadNative(java.lang.Class,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String) -> a
+    org.lwjgl.system.SharedLibrary loadNative(java.lang.Class,java.lang.String,org.lwjgl.system.Configuration,java.lang.String[]) -> a
+    org.lwjgl.system.SharedLibrary loadNative(java.lang.Class,java.lang.String,org.lwjgl.system.Configuration,java.util.function.Supplier,java.lang.String[]) -> a
+    java.lang.String getBundledPath(java.lang.String,java.lang.String) -> a
+    java.net.URL findResource(java.lang.Class,java.lang.String,java.lang.String,boolean) -> c
+    java.lang.String getRegularFilePath(java.net.URL) -> a
+    java.nio.file.Path findFile(java.lang.String,java.lang.String,java.lang.String,boolean) -> a
+    java.nio.file.Path findFile(java.lang.String,java.lang.String) -> b
+    void detectPlatformMismatch(java.lang.Class,java.lang.String) -> a
+    void printError(boolean) -> a
+    void printError(java.lang.String) -> b
+    void checkHash(java.lang.Class,java.nio.file.Path,java.lang.String,java.lang.String) -> a
+    byte[] getSHA1(java.net.URL) -> b
+    byte[] getSHA1(java.nio.file.Path) -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.system.MemoryAccessJNI -> a.a.g.p:
+    int getPointerSize() -> a
+    long malloc() -> b
+    long calloc() -> c
+    long realloc() -> d
+    long free() -> e
+    long aligned_alloc() -> f
+    long aligned_free() -> g
+    void <clinit>() -> <clinit>
+org.lwjgl.system.MemoryManage -> a.a.g.q:
+    org.lwjgl.system.MemoryUtil$MemoryAllocator getInstance() -> a
+    java.lang.String decodeUTF8(long,int) -> a
+    boolean isSameMethod(java.lang.StackTraceElement,java.lang.StackTraceElement) -> a
+    boolean isSameMethod(java.lang.StackTraceElement,java.lang.StackTraceElement,java.lang.String) -> a
+    java.lang.Object stackWalkCheckPop(java.lang.Class,java.lang.Object) -> a
+    java.lang.Object[] stackWalkGetTrace() -> b
+org.lwjgl.system.MemoryManage$DebugAllocator -> a.a.g.r:
+    java.util.concurrent.ConcurrentMap ALLOCATIONS -> a
+    java.util.concurrent.ConcurrentMap THREADS -> b
+    org.lwjgl.system.MemoryUtil$MemoryAllocator allocator -> c
+    long[] callbacks -> d
+    void <init>(org.lwjgl.system.MemoryUtil$MemoryAllocator) -> <init>
+    long malloc(long) -> a
+    long calloc(long,long) -> a
+    long realloc(long,long) -> b
+    void free(long) -> b
+    long aligned_alloc(long,long) -> c
+    void aligned_free(long) -> c
+    long track(long,long) -> d
+    void trackAbort(long,org.lwjgl.system.MemoryManage$DebugAllocator$Allocation,org.lwjgl.system.MemoryManage$DebugAllocator$Allocation) -> a
+    void trackAbortPrint(org.lwjgl.system.MemoryManage$DebugAllocator$Allocation,java.lang.String,java.lang.String) -> a
+    long untrack(long) -> d
+    void untrackAbort(long) -> e
+    void lambda$new$0() -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.system.MemoryManage$DebugAllocator$1 -> a.a.g.s:
+    org.lwjgl.system.MemoryManage$DebugAllocator this$0 -> a
+    void <init>(org.lwjgl.system.MemoryManage$DebugAllocator) -> <init>
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+org.lwjgl.system.MemoryManage$DebugAllocator$2 -> a.a.g.t:
+    org.lwjgl.system.MemoryManage$DebugAllocator this$0 -> a
+    void <init>(org.lwjgl.system.MemoryManage$DebugAllocator) -> <init>
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+org.lwjgl.system.MemoryManage$DebugAllocator$3 -> a.a.g.u:
+    org.lwjgl.system.MemoryManage$DebugAllocator this$0 -> a
+    void <init>(org.lwjgl.system.MemoryManage$DebugAllocator) -> <init>
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+org.lwjgl.system.MemoryManage$DebugAllocator$4 -> a.a.g.v:
+    org.lwjgl.system.MemoryManage$DebugAllocator this$0 -> a
+    void <init>(org.lwjgl.system.MemoryManage$DebugAllocator) -> <init>
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+org.lwjgl.system.MemoryManage$DebugAllocator$5 -> a.a.g.w:
+    org.lwjgl.system.MemoryManage$DebugAllocator this$0 -> a
+    void <init>(org.lwjgl.system.MemoryManage$DebugAllocator) -> <init>
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+org.lwjgl.system.MemoryManage$DebugAllocator$6 -> a.a.g.x:
+    org.lwjgl.system.MemoryManage$DebugAllocator this$0 -> a
+    void <init>(org.lwjgl.system.MemoryManage$DebugAllocator) -> <init>
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+org.lwjgl.system.MemoryManage$DebugAllocator$Allocation -> a.a.g.y:
+    long address -> a
+    long size -> b
+    long threadId -> c
+    java.lang.Object[] stacktrace -> d
+    void <init>(long,long,long,java.lang.Object[]) -> <init>
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    java.lang.StackTraceElement[] access$100(org.lwjgl.system.MemoryManage$DebugAllocator$Allocation) -> a
+org.lwjgl.system.MemoryManage$StdlibAllocator -> a.a.g.z:
+    void <init>() -> <init>
+    long malloc(long) -> a
+    long calloc(long,long) -> a
+    long realloc(long,long) -> b
+    void free(long) -> b
+    long aligned_alloc(long,long) -> c
+    void aligned_free(long) -> c
+    void <init>(byte) -> <init>
+org.lwjgl.system.MemoryStack -> a.a.g.A:
+    int DEFAULT_STACK_SIZE -> b
+    java.lang.ThreadLocal TLS -> c
+    int size -> d
+    int pointer -> e
+    int[] frames -> n
+    int frameIndex -> a
+    void <init>(java.nio.ByteBuffer,long,int) -> <init>
+    org.lwjgl.system.MemoryStack create() -> a
+    org.lwjgl.system.MemoryStack push() -> b
+    org.lwjgl.system.MemoryStack pop() -> c
+    void close() -> close
+    long getPointerAddress() -> d
+    int getPointer() -> e
+    void setPointer(int) -> a
+    long nmalloc(int,int) -> a
+    java.nio.IntBuffer mallocInt(int) -> b
+    java.nio.IntBuffer ints(int) -> c
+    org.lwjgl.PointerBuffer mallocPointer(int) -> d
+    java.nio.ByteBuffer UTF8(java.lang.CharSequence) -> a
+    int nUTF8(java.lang.CharSequence,boolean) -> a
+    java.nio.ByteBuffer UTF16(java.lang.CharSequence) -> b
+    org.lwjgl.system.MemoryStack stackGet() -> f
+    org.lwjgl.system.MemoryStack stackPush() -> g
+    void <clinit>() -> <clinit>
+org.lwjgl.system.MemoryStack$DebugMemoryStack -> a.a.g.B:
+    java.lang.Object[] debugFrames -> b
+    void <init>(java.nio.ByteBuffer,long,int) -> <init>
+    org.lwjgl.system.MemoryStack push() -> b
+    org.lwjgl.system.MemoryStack pop() -> c
+    void close() -> close
+org.lwjgl.system.MemoryUtil -> a.a.g.C:
+    int ARRAY_TLC_SIZE -> a
+    java.lang.ThreadLocal ARRAY_TLC_BYTE -> b
+    java.lang.ThreadLocal ARRAY_TLC_CHAR -> c
+    sun.misc.Unsafe UNSAFE -> d
+    java.nio.ByteOrder NATIVE_ORDER -> e
+    java.nio.charset.Charset UTF16 -> h
+    java.lang.Class BUFFER_BYTE -> f
+    java.lang.Class BUFFER_CHAR -> i
+    java.lang.Class BUFFER_INT -> g
+    long MARK -> j
+    long LIMIT -> k
+    long CAPACITY -> l
+    long ADDRESS -> m
+    org.lwjgl.system.MemoryUtil$MemoryAllocator getAllocator() -> a
+    java.nio.ByteBuffer memAlloc(int) -> a
+    void nmemFree(long) -> a
+    void memFree(java.nio.Buffer) -> a
+    java.nio.ByteBuffer memRealloc(java.nio.ByteBuffer,int) -> a
+    long memAddress0(java.nio.Buffer) -> b
+    long memAddress(java.nio.ByteBuffer) -> a
+    long memAddress(java.nio.IntBuffer) -> a
+    long memAddress(org.lwjgl.system.CustomBuffer) -> a
+    long memAddressSafe(java.nio.ByteBuffer) -> b
+    long memAddressSafe(org.lwjgl.system.Pointer) -> a
+    java.nio.ByteBuffer memByteBuffer(long,int) -> a
+    byte memGetByte(long) -> b
+    short memGetShort(long) -> c
+    int memGetInt(long) -> d
+    long memGetLong(long) -> e
+    float memGetFloat(long) -> f
+    double memGetDouble(long) -> g
+    long memGetAddress(long) -> h
+    void memPutAddress(long,long) -> a
+    java.lang.Object memGlobalRefToObject(long) -> i
+    int write8(long,int,int) -> a
+    int write16(long,int,char) -> a
+    int encodeASCIIUnsafe(java.lang.CharSequence,boolean,long) -> a
+    int memLengthASCII(java.lang.CharSequence,boolean) -> a
+    int encodeUTF8Unsafe(java.lang.CharSequence,boolean,long) -> b
+    int memLengthUTF8(java.lang.CharSequence,boolean) -> b
+    int encodeUTF16Unsafe(java.lang.CharSequence,boolean,long) -> c
+    int memLengthUTF16(java.lang.CharSequence,boolean) -> c
+    int memLengthNT1(long,int) -> b
+    java.lang.String memASCII(long) -> j
+    java.lang.String memASCII(long,int) -> c
+    java.lang.String memASCIISafe(long) -> k
+    java.lang.String memASCII(java.nio.ByteBuffer,int) -> b
+    java.lang.String memUTF8(long) -> l
+    java.lang.String memUTF8Safe(long) -> m
+    java.lang.String memUTF8(java.nio.ByteBuffer,int) -> c
+    java.lang.String memUTF16(java.nio.ByteBuffer,int) -> d
+    sun.misc.Unsafe getUnsafeInstance() -> b
+    long getFieldOffset(java.lang.Class,java.lang.Class,java.util.function.LongPredicate) -> a
+    long getFieldOffsetInt(java.lang.Object,int) -> a
+    long getFieldOffsetObject(java.lang.Object,java.lang.Object) -> a
+    java.nio.Buffer wrap(java.lang.Class,long,int) -> a
+    boolean lambda$getAddressOffset$4(java.nio.ByteBuffer,long,long) -> a
+    boolean lambda$getFieldOffsetObject$3(java.lang.Object,java.lang.Object,long) -> a
+    boolean lambda$getFieldOffsetInt$2(java.lang.Object,int,long) -> a
+    char[] lambda$static$1() -> c
+    byte[] lambda$static$0() -> d
+    void <clinit>() -> <clinit>
+org.lwjgl.system.MemoryUtil$LazyInit -> a.a.g.D:
+    org.lwjgl.system.MemoryUtil$MemoryAllocator ALLOCATOR_IMPL -> a
+    org.lwjgl.system.MemoryUtil$MemoryAllocator ALLOCATOR -> b
+    void <clinit>() -> <clinit>
+org.lwjgl.system.MemoryUtil$MemoryAllocator -> a.a.g.E:
+    long malloc(long) -> a
+    long calloc(long,long) -> a
+    long realloc(long,long) -> b
+    void free(long) -> b
+    long aligned_alloc(long,long) -> c
+    void aligned_free(long) -> c
+org.lwjgl.system.NativeResource -> a.a.g.F:
+    void free() -> a_
+    void close() -> close
+org.lwjgl.system.Platform -> a.a.g.G:
+    org.lwjgl.system.Platform LINUX -> a
+    org.lwjgl.system.Platform MACOSX -> b
+    org.lwjgl.system.Platform WINDOWS -> c
+    org.lwjgl.system.Platform current -> d
+    java.util.function.Function bundledLibraryNameMapper -> e
+    java.util.function.Function bundledLibraryPathMapper -> f
+    java.lang.String name -> g
+    java.lang.String nativePath -> h
+    org.lwjgl.system.Platform[] $VALUES -> i
+    org.lwjgl.system.Platform[] values() -> a
+    void <init>(java.lang.String,int,java.lang.String,java.lang.String) -> <init>
+    java.lang.String getName() -> b
+    java.lang.String mapLibraryName(java.lang.String) -> a
+    org.lwjgl.system.Platform get() -> c
+    org.lwjgl.system.Platform$Architecture getArchitecture() -> d
+    java.lang.String mapLibraryNameBundled(java.lang.String) -> b
+    java.lang.String mapLibraryPathBundled(java.lang.String) -> c
+    java.util.function.Function getMapper(java.lang.Object,java.util.function.Function,java.util.function.Function) -> a
+    java.lang.String lambda$static$3(java.lang.String) -> d
+    java.lang.String lambda$static$2(java.lang.String) -> e
+    java.lang.String lambda$static$1(java.lang.String) -> f
+    java.lang.String lambda$static$0(java.lang.String) -> g
+    void <init>(java.lang.String,int,java.lang.String,java.lang.String,byte) -> <init>
+    void <clinit>() -> <clinit>
+org.lwjgl.system.Platform$1 -> a.a.g.H:
+    java.util.regex.Pattern SO -> d
+    void <init>(java.lang.String,int,java.lang.String,java.lang.String) -> <init>
+    java.lang.String mapLibraryName(java.lang.String) -> a
+org.lwjgl.system.Platform$2 -> a.a.g.I:
+    java.util.regex.Pattern DYLIB -> d
+    void <init>(java.lang.String,int,java.lang.String,java.lang.String) -> <init>
+    java.lang.String mapLibraryName(java.lang.String) -> a
+org.lwjgl.system.Platform$3 -> a.a.g.J:
+    void <init>(java.lang.String,int,java.lang.String,java.lang.String) -> <init>
+    java.lang.String mapLibraryName(java.lang.String) -> a
+org.lwjgl.system.Platform$Architecture -> a.a.g.K:
+    org.lwjgl.system.Platform$Architecture X64 -> c
+    org.lwjgl.system.Platform$Architecture X86 -> d
+    org.lwjgl.system.Platform$Architecture ARM64 -> e
+    org.lwjgl.system.Platform$Architecture ARM32 -> f
+    org.lwjgl.system.Platform$Architecture current -> a
+    boolean is64Bit -> b
+    void <init>(java.lang.String,int,boolean) -> <init>
+    void <clinit>() -> <clinit>
+org.lwjgl.system.Pointer -> a.a.g.L:
+    int POINTER_SIZE -> f
+    int POINTER_SHIFT -> g
+    int CLONG_SIZE -> h
+    boolean BITS32 -> i
+    boolean BITS64 -> j
+    long address() -> address
+    void <clinit>() -> <clinit>
+org.lwjgl.system.Pointer$Default -> a.a.g.M:
+    sun.misc.Unsafe UNSAFE -> k
+    long ADDRESS -> l
+    long BUFFER_CONTAINER -> a
+    long BUFFER_MARK -> b
+    long BUFFER_LIMIT -> c
+    long BUFFER_CAPACITY -> d
+    long address -> m
+    void <init>(long) -> <init>
+    long address() -> address
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+    org.lwjgl.system.CustomBuffer wrap(java.lang.Class,long,int) -> a
+    org.lwjgl.system.CustomBuffer wrap(java.lang.Class,long,int,java.nio.ByteBuffer) -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.system.SharedLibrary -> a.a.g.N:
+    java.lang.String getPath() -> b
+org.lwjgl.system.SharedLibrary$Default -> a.a.g.O:
+    java.lang.String name -> a
+    void <init>(java.lang.String,long) -> <init>
+    java.lang.String getName() -> c
+org.lwjgl.system.SharedLibrary$Delegate -> a.a.g.P:
+    org.lwjgl.system.SharedLibrary library -> a
+    void <init>(org.lwjgl.system.SharedLibrary) -> <init>
+    java.lang.String getPath() -> b
+    long address() -> address
+    void free() -> a_
+org.lwjgl.system.SharedLibraryLoader -> a.a.g.Q:
+    java.util.concurrent.locks.Lock EXTRACT_PATH_LOCK -> a
+    java.nio.file.Path extractPath -> b
+    java.util.HashSet extractPaths -> c
+    boolean checkedJDK8195129 -> d
+    java.nio.channels.FileChannel load(java.lang.String,java.lang.String,java.net.URL,java.util.function.Consumer) -> a
+    java.nio.file.Path getExtractPath(java.lang.String,java.net.URL,java.util.function.Consumer) -> a
+    java.nio.channels.FileChannel extract(java.nio.file.Path,java.net.URL) -> a
+    java.nio.channels.FileChannel lock(java.nio.file.Path) -> a
+    long crc(java.io.InputStream) -> a
+    boolean canWrite(java.nio.file.Path,java.nio.file.Path,java.net.URL,java.util.function.Consumer) -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.system.SharedLibraryUtil -> a.a.g.R:
+    int getLibraryPath(long,long,int) -> a
+    java.lang.String getLibraryPath(long) -> a
+org.lwjgl.system.Struct -> a.a.g.S:
+    int DEFAULT_PACK_ALIGNMENT -> b
+    java.nio.ByteBuffer container -> a
+    void free() -> a_
+    org.lwjgl.system.Struct wrap(java.lang.Class,long) -> a
+    org.lwjgl.system.Struct$Member __member(int) -> a
+    org.lwjgl.system.Struct$Layout __struct(org.lwjgl.system.Struct$Member[]) -> a
+    void addNestedMembers(org.lwjgl.system.Struct$Member,java.util.List,int) -> a
+    int align(int,int) -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.system.Struct$Layout -> a.a.g.T:
+    org.lwjgl.system.Struct$Member[] members -> a
+    void <init>(int,int,boolean,org.lwjgl.system.Struct$Member[]) -> <init>
+    int offsetof(int) -> a
+org.lwjgl.system.Struct$Member -> a.a.g.U:
+    int size -> b
+    int alignment -> c
+    boolean forcedAlignment -> d
+    int offset -> e
+    void <init>(int,int,boolean) -> <init>
+    int getSize() -> a
+    int getAlignment() -> b
+org.lwjgl.system.ThreadLocalUtil -> a.a.g.V:
+    long JNI_NATIVE_INTERFACE -> a
+    int JNI_NATIVE_INTERFACE_FUNCTION_COUNT -> b
+    long FUNCTION_MISSING_ABORT -> c
+    int CAPABILITIES_OFFSET -> d
+    long getThreadJNIEnv() -> a
+    long getFunctionMissingAbort() -> b
+    long nsetupEnvData(int) -> b
+    void setCapabilities(long) -> a
+    void setFunctionMissingAddresses(int) -> a
+    org.lwjgl.PointerBuffer setupAddressBuffer(org.lwjgl.PointerBuffer) -> a
+    boolean areCapabilitiesDifferent(org.lwjgl.PointerBuffer,org.lwjgl.PointerBuffer) -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.system.jni.JNINativeInterface -> a.a.g.a.a:
+    int GetVersion() -> a
+    long NewGlobalRef(java.lang.Object) -> a
+    void nDeleteGlobalRef(long) -> b
+    void DeleteGlobalRef(long) -> a
+    java.nio.ByteBuffer nNewDirectByteBuffer(long,long) -> b
+    java.nio.ByteBuffer NewDirectByteBuffer(long,long) -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.system.libc.LibCStdlib -> a.a.g.b.a:
+    long nmalloc(long) -> a
+    long ncalloc(long,long) -> a
+    long nrealloc(long,long) -> b
+    void nfree(long) -> b
+    long naligned_alloc(long,long) -> c
+    void naligned_free(long) -> c
+    void <clinit>() -> <clinit>
+org.lwjgl.system.libffi.FFICIF -> a.a.g.c.a:
+    int SIZEOF -> b
+    int offsets(long) -> b
+    org.lwjgl.system.libffi.FFICIF create(long) -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.system.libffi.FFIClosure -> a.a.g.c.b:
+    int SIZEOF -> b
+    int USER_DATA -> c
+    int offsets(long) -> d
+    org.lwjgl.system.libffi.FFIClosure create(long) -> a
+    org.lwjgl.system.libffi.FFIClosure createSafe(long) -> b
+    long nuser_data(long) -> c
+    void <clinit>() -> <clinit>
+org.lwjgl.system.libffi.FFIType -> a.a.g.c.c:
+    org.lwjgl.system.libffi.FFIType create(long) -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.system.libffi.LibFFI -> a.a.g.c.d:
+    int FFI_STDCALL -> a
+    int FFI_DEFAULT_ABI -> b
+    org.lwjgl.system.libffi.FFIType ffi_type_void -> c
+    org.lwjgl.system.libffi.FFIType ffi_type_uint8 -> d
+    org.lwjgl.system.libffi.FFIType ffi_type_uint16 -> e
+    org.lwjgl.system.libffi.FFIType ffi_type_uint32 -> f
+    org.lwjgl.system.libffi.FFIType ffi_type_sint32 -> g
+    org.lwjgl.system.libffi.FFIType ffi_type_uint64 -> h
+    org.lwjgl.system.libffi.FFIType ffi_type_float -> i
+    org.lwjgl.system.libffi.FFIType ffi_type_double -> j
+    org.lwjgl.system.libffi.FFIType ffi_type_pointer -> k
+    short FFI_TYPE_DOUBLE() -> a
+    int FFI_WIN64() -> b
+    int FFI_GNUW64() -> c
+    int FFI_UNIX64() -> d
+    int FFI_EFI64() -> e
+    int FFI_SYSV() -> f
+    int FFI_STDCALL() -> g
+    int FFI_THISCALL() -> h
+    int FFI_FASTCALL() -> i
+    int FFI_MS_CDECL() -> j
+    int FFI_PASCAL() -> k
+    int FFI_REGISTER() -> l
+    int FFI_VFP() -> m
+    int FFI_FIRST_ABI() -> n
+    int FFI_LAST_ABI() -> o
+    int FFI_DEFAULT_ABI() -> p
+    long nffi_type_void() -> q
+    long nffi_type_uint8() -> r
+    long nffi_type_sint8() -> s
+    long nffi_type_uint16() -> t
+    long nffi_type_sint16() -> u
+    long nffi_type_uint32() -> v
+    long nffi_type_sint32() -> w
+    long nffi_type_uint64() -> x
+    long nffi_type_sint64() -> y
+    long nffi_type_uchar() -> z
+    long nffi_type_schar() -> A
+    long nffi_type_ushort() -> B
+    long nffi_type_sshort() -> C
+    long nffi_type_uint() -> D
+    long nffi_type_sint() -> E
+    long nffi_type_ulong() -> F
+    long nffi_type_slong() -> G
+    long nffi_type_float() -> H
+    long nffi_type_double() -> I
+    long nffi_type_longdouble() -> J
+    long nffi_type_pointer() -> K
+    int nffi_prep_cif(long,int,int,long,long) -> a
+    int ffi_prep_cif(org.lwjgl.system.libffi.FFICIF,int,org.lwjgl.system.libffi.FFIType,org.lwjgl.PointerBuffer) -> a
+    long nffi_closure_alloc(long,long) -> a
+    org.lwjgl.system.libffi.FFIClosure ffi_closure_alloc(long,org.lwjgl.PointerBuffer) -> a
+    void nffi_closure_free(long) -> a
+    void ffi_closure_free(org.lwjgl.system.libffi.FFIClosure) -> a
+    int nffi_prep_closure_loc(long,long,long,long,long) -> a
+    int ffi_prep_closure_loc(org.lwjgl.system.libffi.FFIClosure,org.lwjgl.system.libffi.FFICIF,long,long,long) -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.system.linux.DynamicLinkLoader -> a.a.g.d.a:
+    long ndlopen(long,int) -> a
+    long dlopen(java.nio.ByteBuffer,int) -> a
+    long ndlerror() -> b
+    java.lang.String dlerror() -> a
+    long ndlsym(long,long) -> a
+    long dlsym(long,java.nio.ByteBuffer) -> a
+    int ndlclose(long) -> b
+    int dlclose(long) -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.system.linux.LinuxLibrary -> a.a.g.d.b:
+    void <init>(java.lang.String) -> <init>
+    void <init>(java.lang.String,long) -> <init>
+    long loadLibrary(java.lang.String) -> a
+    java.lang.String getPath() -> b
+    long getFunctionAddress(java.nio.ByteBuffer) -> a
+    void free() -> a_
+org.lwjgl.system.macosx.CGEventTapCallBackI -> a.a.g.e.a:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    long invoke$3998ad98() -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.system.macosx.CoreFoundation -> a.a.g.e.b:
+    long kCFAllocatorNull -> a
+    long kCFAllocatorDefault() -> a
+    long kCFAllocatorSystemDefault() -> b
+    long kCFAllocatorMalloc() -> c
+    long kCFAllocatorMallocZone() -> d
+    long kCFAllocatorNull() -> e
+    long kCFAllocatorUseContext() -> f
+    void nCFRelease(long) -> b
+    void CFRelease(long) -> a
+    long nCFBundleCreate(long,long) -> c
+    long CFBundleCreate(long,long) -> a
+    long nCFBundleGetFunctionPointerForName(long,long) -> d
+    long CFBundleGetFunctionPointerForName(long,long) -> b
+    long nCFStringCreateWithCStringNoCopy(long,long,int,long) -> a
+    long CFStringCreateWithCStringNoCopy(long,java.nio.ByteBuffer,int,long) -> a
+    long nCFURLCreateWithFileSystemPath(long,long,long,boolean) -> b
+    long CFURLCreateWithFileSystemPath(long,long,long,boolean) -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.system.macosx.DynamicLinkLoader -> a.a.g.e.c:
+    long ndlopen(long,int) -> a
+    long dlopen(java.nio.ByteBuffer,int) -> a
+    long ndlerror() -> b
+    java.lang.String dlerror() -> a
+    long ndlsym(long,long) -> a
+    long dlsym(long,java.nio.ByteBuffer) -> a
+    int ndlclose(long) -> b
+    int dlclose(long) -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.system.macosx.EnumerationMutationHandlerI -> a.a.g.e.d:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.system.macosx.LibC -> a.a.g.e.e:
+org.lwjgl.system.macosx.LibC$Functions -> a.a.g.e.f:
+    long getpid -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.system.macosx.LibSystem -> a.a.g.e.g:
+    org.lwjgl.system.SharedLibrary SYSTEM -> a
+    org.lwjgl.system.SharedLibrary getLibrary() -> a
+    void <init>() -> <init>
+    void <clinit>() -> <clinit>
+org.lwjgl.system.macosx.MacOSXLibrary -> a.a.g.e.h:
+    void <init>(java.lang.String,long) -> <init>
+    org.lwjgl.system.macosx.MacOSXLibrary create(java.lang.String) -> a
+org.lwjgl.system.macosx.MacOSXLibraryBundle -> a.a.g.e.i:
+    void <init>(java.lang.String,long) -> <init>
+    org.lwjgl.system.macosx.MacOSXLibraryBundle create(java.lang.String) -> b
+    java.lang.String getPath() -> b
+    long getFunctionAddress(java.nio.ByteBuffer) -> a
+    long CString2CFString(java.nio.ByteBuffer,int) -> a
+    void free() -> a_
+org.lwjgl.system.macosx.MacOSXLibraryDL -> a.a.g.e.j:
+    void <init>(java.lang.String) -> <init>
+    void <init>(java.lang.String,long) -> <init>
+    long loadLibrary(java.lang.String) -> b
+    java.lang.String getPath() -> b
+    long getFunctionAddress(java.nio.ByteBuffer) -> a
+    void free() -> a_
+org.lwjgl.system.macosx.ObjCRuntime -> a.a.g.e.k:
+    org.lwjgl.system.SharedLibrary OBJC -> a
+    org.lwjgl.system.SharedLibrary getLibrary() -> a
+    void <init>() -> <init>
+    long objc_getClass(java.lang.CharSequence) -> a
+    long sel_getUid(java.lang.CharSequence) -> b
+    org.lwjgl.system.SharedLibrary access$000() -> b
+    void <clinit>() -> <clinit>
+org.lwjgl.system.macosx.ObjCRuntime$Functions -> a.a.g.e.l:
+    long objc_getClass -> a
+    long sel_getUid -> b
+    void <clinit>() -> <clinit>
+org.lwjgl.system.windows.WinBase -> a.a.g.f.a:
+    int getLastError() -> a
+    long nGetModuleHandle(long) -> b
+    long GetModuleHandle(java.nio.ByteBuffer) -> a
+    int nGetModuleFileName(long,long,int) -> a
+    int GetModuleFileName(long,java.nio.ByteBuffer) -> a
+    long nLoadLibrary(long) -> c
+    long LoadLibrary(java.nio.ByteBuffer) -> b
+    long nGetProcAddress(long,long) -> a
+    long GetProcAddress(long,java.nio.ByteBuffer) -> b
+    int nFreeLibrary(long) -> d
+    boolean FreeLibrary(long) -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.system.windows.WindowProcI -> a.a.g.f.b:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    long invoke$3998ad98() -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.system.windows.WindowsLibrary -> a.a.g.f.c:
+    long HINSTANCE -> a
+    void <init>(java.lang.String) -> <init>
+    void <init>(java.lang.String,long) -> <init>
+    long loadLibrary(java.lang.String) -> a
+    java.lang.String getPath() -> b
+    long getFunctionAddress(java.nio.ByteBuffer) -> a
+    void free() -> a_
+    void <clinit>() -> <clinit>
+org.lwjgl.vulkan.VkAllocationFunctionI -> a.a.h.a:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    long invoke$398a99d8() -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.vulkan.VkDebugReportCallbackEXTI -> a.a.h.b:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    int invoke$69c3fa9() -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.vulkan.VkDebugUtilsMessengerCallbackEXTI -> a.a.h.c:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    int invoke$3b4d8638() -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.vulkan.VkDeviceMemoryReportCallbackEXTI -> a.a.h.d:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.vulkan.VkFreeFunctionI -> a.a.h.e:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.vulkan.VkGetInstanceProcAddrLUNARGI -> a.a.h.f:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    long invoke$2566aa9() -> a
+    void <clinit>() -> <clinit>
+org.lwjgl.vulkan.VkInternalAllocationNotificationI -> a.a.h.g:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.vulkan.VkInternalFreeNotificationI -> a.a.h.h:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    void <clinit>() -> <clinit>
+org.lwjgl.vulkan.VkReallocationFunctionI -> a.a.h.i:
+    org.lwjgl.system.libffi.FFICIF CIF -> a
+    org.lwjgl.system.libffi.FFICIF getCallInterface() -> getCallInterface
+    void callback(long,long) -> callback
+    long invoke$83847a2() -> a
+    void <clinit>() -> <clinit>
+ru.spike.util.Launcher -> ru.spike.util.Launcher:
+    void <init>() -> <init>
+    void main(java.lang.String[]) -> main
+ru.spike.util.WindowManager -> ru.spike.util.a:
+    java.lang.String title -> a
+    int width -> b
+    int height -> c
+    long window -> d
+    boolean vSync -> e
+    void <init>(java.lang.String,int,int,boolean) -> <init>
+    void init() -> a
+    void update() -> b
+    void cleanup() -> c
+    boolean windowShouldClose() -> d
+    void lambda$init$1(long,int,int,int,int) -> a
+    void lambda$init$0(long,int,int) -> a

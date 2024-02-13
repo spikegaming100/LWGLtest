@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Class-Path: lib/lwjgl-assimp-3.3.2.jar lib/lwjgl-assimp-3.3.2-natives-
+ windows.jar lib/lwjgl-bgfx-3.3.2.jar lib/lwjgl-bgfx-3.3.2-natives-win
+ dows.jar lib/lwjgl-glfw-3.3.2.jar lib/lwjgl-glfw-3.3.2-natives-window
+ s.jar lib/lwjgl-openal-3.3.2.jar lib/lwjgl-openal-3.3.2-natives-windo
+ ws.jar lib/lwjgl-opengl-3.3.2.jar lib/lwjgl-opengl-3.3.2-natives-wind
+ ows.jar lib/lwjgl-stb-3.3.2.jar lib/lwjgl-stb-3.3.2-natives-windows.j
+ ar lib/lwjgl-vulkan-3.3.2.jar lib/lwjgl-3.3.2.jar lib/lwjgl-3.3.2-nat
+ ives-windows.jar
+Main-Class: ru.spike.util.Launcher
+
