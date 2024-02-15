@@ -119,6 +119,6 @@ task buildObf(type: proguard.gradle.ProGuardTask) {
     outjars(layout.buildDirectory.file("${buildDir}/libs/" + project.name + "-" + project.version + "-" + "obf.jar"))
 }
 
-task pivo(
-        println(configurations.runtimeClasspath.getDependencies()
-)
+//task pivo(
+//        println(configurations.runtimeClasspath.getDependencies()
+//)
