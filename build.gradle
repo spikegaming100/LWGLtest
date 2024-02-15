@@ -64,7 +64,7 @@ dependencies {
 }
 
 jar {
-    archiveFileName = project.name + "-" + project.version + "_extLib.jar"
+    archiveFileName = project.name + "-" + project.version + "-extLib.jar"
     manifest {
         attributes(
                 'Main-Class': project.mainClassName,
