@@ -1,4 +1,5 @@
 import org.gradle.internal.os.OperatingSystem
+import proguard.gradle.ProGuardTask
 
 buildscript {
     repositories {
@@ -72,45 +73,45 @@ jar {
     }
 }
 
-tasks.register('fatjar', Jar) {
-    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-    archiveFileName = project.name + "-" + project.version + ".jar"
-    manifest {
-        attributes 'Main-Class': project.mainClassName
-    }
-    archiveClassifier = "all"
-    from {
-        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
-    }
-    with jar
-
-}
-
-launch4j {
-    outfile = project.name + "-" + project.version + ".exe"
-    mainClassName = project.mainClassName
-    copyConfigurable = []
-    icon = "${projectDir}/src/main/java/res/app.ico"
-    version = project.version
-    textVersion = project.version
-    copyright = "© SpikeDevelopment"
-    jreMinVersion = "8"
-    jarTask = project.tasks.fatjar
-}
-
 tasks.register('buildExtLib', Copy) {
     dependsOn jar
     from configurations.runtimeClasspath
     into "${buildDir}/libs/lib/"
 }
 
-task buildObf(type: proguard.gradle.ProGuardTask) {
+tasks.register('buildFatjar', Jar) {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    archiveClassifier = "all"
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    with jar
+    manifest {
+        attributes 'Main-Class': project.mainClassName
+    }
+    archiveFileName = project.name + "-" + project.version + "-fat.jar"
+}
+
+tasks.register('buildObr', ProGuardTask) {
     configuration file('proguard.pro')
-    dependsOn buildExtLib
-    injars(tasks.named('fatjar', Jar))
+    dependsOn jar
+    injars(tasks.named('buildFatjar', Jar).flatMap { it.archiveFile })
     libraryjars "${System.getProperty('java.home')}/lib/rt.jar"
     configurations.runtimeClasspath.files.each {
-        libraryjars it}
+        libraryjars it, filter: '!META-INF/versions/**'
+    }
     verbose
-    outjars(layout.buildDirectory.file("${buildDir}/libs/" + project.name + "-" + project.version + "-" + "obf.jar"))
+    outjars(layout.buildDirectory.file("${buildDir}/libs/" + project.name + "-" + project.version + "-" + "obr.jar"))
+}
+
+launch4j {
+    outfile = project.name + "-" + project.version + ".exe"
+    outputDir = "${buildDir}/libs/"
+    mainClassName = project.mainClassName
+    icon = "${projectDir}/src/main/java/res/app.ico"
+    version = project.version
+    textVersion = project.version
+    copyright = "© SpikeDevelopment"
+    jreMinVersion = "8"
+    jarTask = project.tasks.buildObr
 }
