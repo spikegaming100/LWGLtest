@@ -15,7 +15,7 @@
 #-dontwarn
 
 -verbose
--printmapping mappings.txt
+-printmapping 'mapping.txt'
 #-ignorewarnings
 # Entry point to the app.
 -keep class ru.spike.util.Launcher* { *; }

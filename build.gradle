@@ -7,6 +7,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.guardsquare:proguard-gradle:7.3.0'
+        classpath "io.github.valacuz:proguard-dict-generator:1.0.1"
     }
 }
 
@@ -74,7 +75,7 @@ jar {
 }
 
 clean {
-    delete "proguard/mappings.txt"
+    delete "proguard/mapping.txt", "proguard/dictionary.txt"
 }
 
 tasks.register('buildExtLib', Copy) {
@@ -97,9 +98,36 @@ tasks.register('fatjar', Jar) {
 
 }
 
+tasks.register('genDict') {
+    delete "proguard/dictionary.txt"
+    outputs.file('proguard/dictionary.txt')
+    doLast {
+        def r = new Random()
+        def begin = r.nextInt(1000) + 0x0100
+        def end = begin + 0x400
+        def chars = (begin..end)
+                .findAll { Character.isValidCodePoint(it) && Character.isJavaIdentifierPart(it) }
+                .collect { String.valueOf(Character.toChars(it)) }
+        int max = chars.size()
+        def start = []
+        for (int i = 0; i < max; i++) {
+            char c = chars.get(i).charAt(0)
+            if (Character.isJavaIdentifierStart(c)) {
+                start << String.valueOf(c)
+            }
+        }
+        def f = outputs.files.getSingleFile()
+        f.getParentFile().mkdirs()
+        f.withWriter("UTF-8") {
+            it.write(start.join(System.lineSeparator()))
+            it.write()
+        }
+    }
+}
+
 tasks.register('buildObr', ProGuardTask) {
+    dependsOn buildExtLib, genDict
     configuration file('proguard/proguard.pro')
-    dependsOn buildExtLib
     injars(tasks.named('fatjar', Jar))
     libraryjars "${System.getProperty('java.home')}/lib/rt.jar"
     configurations.runtimeClasspath.files.each {
