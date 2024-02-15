@@ -1,4 +1,5 @@
 import org.gradle.internal.os.OperatingSystem
+import proguard.gradle.ProGuardTask
 
 buildscript {
     repositories {
@@ -72,9 +73,19 @@ jar {
     }
 }
 
+clean {
+    delete "proguard/mappings.txt"
+}
+
+tasks.register('buildExtLib', Copy) {
+    dependsOn jar
+    from configurations.runtimeClasspath
+    into "${buildDir}/libs/lib/"
+}
+
 tasks.register('fatjar', Jar) {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-    archiveFileName = project.name + "-" + project.version + ".jar"
+    archiveFileName = project.name + "-" + project.version + "-fat.jar"
     manifest {
         attributes 'Main-Class': project.mainClassName
     }
@@ -86,8 +97,21 @@ tasks.register('fatjar', Jar) {
 
 }
 
+tasks.register('buildObr', ProGuardTask) {
+    configuration file('proguard/proguard.pro')
+    dependsOn buildExtLib
+    injars(tasks.named('fatjar', Jar))
+    libraryjars "${System.getProperty('java.home')}/lib/rt.jar"
+    configurations.runtimeClasspath.files.each {
+        libraryjars it
+    }
+    verbose
+    outjars(layout.buildDirectory.file("${buildDir}/libs/" + project.name + "-" + project.version + "-" + "obf.jar"))
+}
+
 launch4j {
     outfile = project.name + "-" + project.version + ".exe"
+    outputDir = "${buildDir}/libs/"
     mainClassName = project.mainClassName
     copyConfigurable = []
     icon = "${projectDir}/src/main/java/res/app.ico"
@@ -95,22 +119,5 @@ launch4j {
     textVersion = project.version
     copyright = "© SpikeDevelopment"
     jreMinVersion = "8"
-    jarTask = project.tasks.fatjar
-}
-
-tasks.register('buildExtLib', Copy) {
-    dependsOn jar
-    from configurations.runtimeClasspath
-    into "${buildDir}/libs/lib/"
-}
-
-task buildObf(type: proguard.gradle.ProGuardTask) {
-    configuration file('proguard.pro')
-    dependsOn buildExtLib
-    injars(tasks.named('fatjar', Jar))
-    libraryjars "${System.getProperty('java.home')}/lib/rt.jar"
-    configurations.runtimeClasspath.files.each {
-        libraryjars it}
-    verbose
-    outjars(layout.buildDirectory.file("${buildDir}/libs/" + project.name + "-" + project.version + "-" + "obf.jar"))
+    jarTask = project.tasks.buildObr
 }
