@@ -93,7 +93,7 @@ tasks.register('buildFatjar', Jar) {
 }
 
 tasks.register('buildObr', ProGuardTask) {
-    configuration file('proguard.pro')
+    configuration file('/proguard/proguard.pro')
     dependsOn jar
     injars(tasks.named('buildFatjar', Jar).flatMap { it.archiveFile })
     libraryjars "${System.getProperty('java.home')}/lib/rt.jar"
