@@ -103,8 +103,8 @@ tasks.register('genDict') {
     outputs.file('proguard/dictionary.txt')
     doLast {
         def r = new Random()
-        def begin = r.nextInt(1000) + 0x0100
-        def end = begin + 0x400
+        def begin = r.nextInt(1000) + 0x010
+        def end = begin + 0x40
         def chars = (begin..end)
                 .findAll { Character.isValidCodePoint(it) && Character.isJavaIdentifierPart(it) }
                 .collect { String.valueOf(Character.toChars(it)) }

@@ -132,4 +132,5 @@ public class WindowManager {
     public long getWindow() {
         return window;
     }
+
 }
